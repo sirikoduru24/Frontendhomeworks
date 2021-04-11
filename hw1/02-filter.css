@@ -1,1 +1,27 @@
 /* Add your code here */
+.grayscale{
+    filter: grayscale(100%);
+}
+.blurimage{
+    filter: blur(2px);
+}
+.invertimage {
+    filter: invert(80%);
+}
+.brightimage {
+    filter: brightness(0.8);
+}
+.saturationimage {
+    filter: saturate(30%);
+}
+.sepiaimage {
+    filter: sepia(100%);
+}
+.variousfilters{
+    filter: blur(3px) brightness(0.7);
+}
+figure{
+   display: inline-block; 
+   width: 250px;
+   height: 250px;
+}
