@@ -5,16 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JavaScript Form Exercise</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw1/04-form.css" />
     <script defer src="01-form.js"></script>
   </head>
   <body class="bg-dark text-dark">
     <main>
-      <h1>Contact Form</h1>
-      <form action="">
-        <!-- Step 1 - Insert your previous form here -->
-        <!-- Step 2 - Address any responsiveness and/or accessibility issues -->
-      </form>
+      <div class="form">
+        <h1>INTRO SURVEY</h1>
+        <form action="" id = "formGroup"> 
+          <label for="name"><b>Name</b> <span id = "req">(required)</span></label>
+          <br/>
+          <input type="text" id="name" name="name" required/>
+          <br/>
+          <label for="email"><b>Email </b><span id = "req">(required)</span></label>
+          <br/>
+          <input type="email" id="email" name="email" required/>
+          <br/>
+          <label for="class-select"><b>Registration Status:</b></label>
+          <br/>
+          <select name="class" id="class-select">
+            <option value="">Choose an option</option>
+            <option value="Registered">Registered</option>
+            <option value="Awaiting">Awaiting</option>
+            <option value="Done">Done</option>
+          </select>
+          <br/>
+          <fieldset class>
+            <legend><b>Class Section:</b></legend>
+              <input type="radio" id = "410" name = "class-section" value = "CS 410P"/>
+              <label for="410">CS 410P</label>
+              <input type="radio" id = "510" name = "class-section" value = "CS 510"/>
+              <label for="510">CS 510</label>    
+          </fieldset><br/>
+          <fieldset>
+            <legend><b>Have you taken any of the following courses?</b></legend>
+            <input type="checkbox" name="PL" id="option1" value="Programming Languages">
+            <label for="option1">Programming Languages</label><br/>
+            <input type="checkbox" name="OS" id="option2" value="Operating Systems">
+            <label for="option2">Operating Systems</label> <br/>
+            <input type="checkbox" name="WD" id="option3" value="Full Stack Web Development">
+            <label for="option3">Full Stack Web Development</label>
+          </fieldset>
+          <br/>
+          <label for= "tarea"><b>Anything else?</b></label><br/>
+          <textarea id = "tarea"></textarea>
+          <br/><br/>
+            <input type="submit" name="submit" value="Submit" class = "btn" id = "btn"/>
+            <input type="reset" name="reset" value="Reset" class = "reset"/>
+        </form>
+      </div>
     </main>
   </body>
 </html>
