@@ -39,7 +39,6 @@ document.getElementById('parse').onclick = () => {
     div.append(header);
     div.appendChild(footer);
     if(validateURL(givenURL[0])) {
-        //console.log('here');
         header.innerHTML = ('<h1> Results </h1>'+ '<h4> URL </h4>'+'<span>'+ givenURL[0] + '</span>');
     } else {
         header.innerHTML = ('<span> Invalid URL</span>');
