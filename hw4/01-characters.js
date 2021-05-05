@@ -2,3 +2,4 @@
 let url = 'https://thronesapi.com/api/v2/Characters';
 
 fetch(url);
+console.log(url)
