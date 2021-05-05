@@ -5,11 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Form Exercise</title>
-    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="04-form.css" />
   </head>
   <body>
-    <!-- 04 - Form Exercise -->
-    <!-- Add your code below -->
+    <main>
+    <div class="form" >
+      <h1>INTRO SURVEY</h1>
+      <form action=""> 
+        <label for="name"><b>Name</b> <span id = "req">(required)</span></label>
+        <br/>
+        <input type="text" id="name" name="name" required/>
+        <br/>
+        <label for="email"><b>Email </b><span id = "req">(required)</span></label>
+        <br/>
+        <input type="email" id="email" name="email" required/>
+        <br/>
+        <label for="class-select"><b>Registration Status:</b></label>
+        <br/>
+        <select name="class" id="class-select">
+          <option value="">Choose an option</option>
+          <option value="reg">Registered</option>
+          <option value="awa">Awaiting</option>
+          <option value="done">Done</option>
+        </select>
+        <br/>
+        <fieldset>
+          <legend><b>Class Section:</b></legend>
+            <input type="radio" id = "410" name = "class-section" value = "CS 410P"/>
+            <label for="410">CS 410P</label>
+            <input type="radio" id = "510" name = "class-section" value = "CS 510"/>
+            <label for="510">CS 510</label>    
+        </fieldset><br/>
+        <fieldset>
+          <legend><b>Have you taken any of the following courses?</b></legend>
+          <input type="checkbox" name="PL" id="option1" value="PL">
+          <label for="option1">Programming Languages</label><br/>
+          <input type="checkbox" name="OS" id="option2">
+          <label for="option2">Operating Systems</label> <br/>
+          <input type="checkbox" name="WD" id="option3">
+          <label for="option3">Full Stack Web Development</label>
+        </fieldset>
+        <br/>
+        <label for= "tarea"><b>Anything else?</b></label><br/>
+        <textarea id = "tarea"></textarea>
+        <br/><br/>
+          <input type="submit" name="submit" value="Submit" class = "btn"/>
+          <input type="reset" name="reset" value="Reset" class = "reset"/>
+      </form>
+    </div>
+  </main>
   </body>
 </html>
